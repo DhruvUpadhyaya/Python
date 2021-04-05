@@ -1,7 +1,9 @@
-age = int(input("Enter your age\n"))
-age_90 = 90 - age
-days = 365 * age_90
-weeks = 52 * age_90
-months = 12 * age_90
-
-print(f"You have {days} days, {weeks} weeks and {months} months")
+#Tip Calculator
+print("Welcome to the tip calculatore.")
+total_bill = float(input("What was the total bill?\n"))
+tip_percentage = int(input("What percentage tip would you like to give? 10, 12, or 15?\n"))
+num_of_people = int(input("How many people to split the bill\n"))
+tip = total_bill*tip_percentage/100
+amount_each = (total_bill+tip)/num_of_people
+amount_round = round(amount_each,2)
+print(f"Each person should pay: ${amount_round}")
